@@ -8,3 +8,87 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.border{
+    border: 1px solid red;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    height: 100dvh;
+    background-color: #c4dcff;
+    /* background-color: #0258d4; */
+    padding: 1rem;
+    
+}
+.container .wrapper{
+    background-color: #fff;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+}
+
+.card{
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+  
+}
+.card .avatar{
+    --dim : 100px;
+    width: var(--dim);
+    height: var(--dim);
+    /* background-color: red; */
+    border-radius: 100px;
+}
+
+.card .avatar img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+
+}
+
+.card .secondary{
+    color: #444;
+}
+
+.card .shift{
+    background-color: #0258d4;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+.card .shift:hover{
+    background-color: #0262e7;
+}
+
+.card a{
+    text-decoration: none;
+}
+.card a:hover{
+    color: #0258d4;
+    text-decoration: underline;
+}
+.none{
+    display: none;
+}
+
+
+.card .more{}
+
+
+@media (min-width:500px){
+    .container .wrapper{
+        width: 400px;
+    }
+
+    .container{
+        justify-items: center;
+    }
+}
